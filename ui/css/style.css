@@ -1,0 +1,19 @@
+body{
+  margin:  5%;
+}
+table{
+  width: 100%
+}
+.load{
+  border: 5px solid #b9b9b9;
+  border-radius: 50%;
+  border-bottom: 5px solid #1da1f2;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}

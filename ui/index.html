@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="row formContainer">
+      <div class="col-md-8 card">
+        <div class="card-header">
+          Fill Following Details
+        </div>
+        <div class="card-body">
+
+          <form action="">
+            <div class="form-group">
+              <label for="symptom">Symtom</label>
+              <input type="text" class="form-control" name="symptom">
+              <span class="small">Enter text like "Headache", "I have a backpain","Suffering from fever."</span>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="year_of_birth">Year Of Birth</label>
+              <input type="text" class="form-control" name="year_of_birth">
+            </div>
+            <button type="button" class="btn btn-primary findButton">Submit</button>
+          </form>
+
+        </div>
+
+      </div>
+      <div class="col-md-4 text-center" style="padding:10%;">
+        <div class="row loader" style="display:none;">
+          <div class="load" style="margin-left:30%;">
+          </div>
+          <div class="font-weight-bold displayInfo">
+            Fetching Symptom Information
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row tableContainer" style="display:none;">
+      <div class="col-md-7 card">
+        <div class="card-header">
+          <h2 class="symptomInfo"></h2>
+        </div>
+        <div class="card-body">
+          <div class="container fillInfo">
+
+          </div>
+        </div>
+        <div class="card-footer">
+
+            <p class="text-left backToForm font-weight-bold" style="font-size:1.5em;cursor:pointer;">Go Back to Symptom Form</p>
+            <p class="text-right fetchDoc  font-weight-bold" style="font-size:1.5em;cursor:pointer;">Find Doctor Near Me </p>
+
+        </div>
+      </div>
+
+      <div class="col-md-5 docInfo">
+
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js">
+
+    </script>
+  </body>
+</html>
